@@ -1,26 +1,20 @@
 //=========================BackEnd=========================
 var pingpongify = function (num) {
-  var numArray = [];
   var resultArray = [];
-  var pingPongArray = [3, 5];
 
   for (i = 1; i <= num; i ++) {
-    numArray.push(i);
-  };
-
-  for (i = 0; i < numArray.length; i ++) {
     if
-    ((numArray[i] % 15) === 0) {
+    ((i % 15) === 0) {
       resultArray.push('pingpong');
     }
-    else if ((numArray[i] % 5) === 0) {
+    else if ((i % 5) === 0) {
       resultArray.push('pong');
     }
-    else if ((numArray[i] % 3) === 0) {
+    else if ((i % 3) === 0) {
       resultArray.push('ping');
     }
     else {
-      resultArray.push(numArray[i]);
+      resultArray.push(i);
     }
   };
   // console.log(numArray);

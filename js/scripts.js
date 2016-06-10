@@ -1,5 +1,5 @@
 //=========================BackEnd=========================
-var pingpong = function (num) {
+var pingpongify = function (num) {
   var numArray = [];
   for (i = 1; i <= num; i ++) {
     numArray.push(i);
@@ -16,7 +16,7 @@ var pingpong = function (num) {
     numArray.splice(i, 1, 'ping');
     }
   };
-  console.log(numArray);
+  // console.log(numArray);
   return numArray;
 };
 //=========================FrontEnd========================
@@ -24,6 +24,15 @@ $(function() {
   $('.inputnum').submit(function(event) {
     event.preventDefault();
     var num = parseInt($('#inputnum').val());
-    pingpong(num);
+    var resultArray = pingpongify(num);
+    var resultList = '';
+
+    for (i = 0; i < resultArray.length; i ++) {
+      resultList = resultList + '<li>' + (resultArray[i].toString()) + '</li>';
+      // console.log(resultList);
+    };
+
+    $('#resultList').html(resultList);
+    $('.result').show();
   });
 });

@@ -1,3 +1,33 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: #e6e6e6;
+}
+
+.title {
+  background-color: #ffa64d;
+}
+
+.title h1 {
+  margin-top: 0;
+  padding: 1em;
+  text-align: center;
+  font-size: 4em;
+}
+
+.col-md-3 {
+  background-color: #ccd8ff;
+  padding-bottom: 1em;
+  border-radius: 0.3em;
+}
+
 .result {
-  display: none;
+  background-image: url(../img/table.png);
+  background-repeat: repeat-y;
+  color: #ffa64d;
+}
+
+#resultList {
+  list-style-type: none;
 }

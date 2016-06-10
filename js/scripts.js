@@ -1,23 +1,30 @@
 //=========================BackEnd=========================
 var pingpongify = function (num) {
   var numArray = [];
+  var resultArray = [];
+  var pingPongArray = [3, 5];
+
   for (i = 1; i <= num; i ++) {
     numArray.push(i);
   };
+
   for (i = 0; i < numArray.length; i ++) {
     if
     ((numArray[i] % 15) === 0) {
-      numArray.splice(i, 1, 'pingpong');
+      resultArray.push('pingpong');
     }
     else if ((numArray[i] % 5) === 0) {
-      numArray.splice(i, 1, 'pong');
+      resultArray.push('pong');
     }
     else if ((numArray[i] % 3) === 0) {
-    numArray.splice(i, 1, 'ping');
+      resultArray.push('ping');
+    }
+    else {
+      resultArray.push(numArray[i]);
     }
   };
   // console.log(numArray);
-  return numArray;
+  return resultArray;
 };
 //=========================FrontEnd========================
 $(function() {
@@ -33,6 +40,6 @@ $(function() {
     };
 
     $('#resultList').html(resultList);
-    $('.result').show();
+    // $('.result').show();
   });
 });

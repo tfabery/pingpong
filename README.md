@@ -13,8 +13,8 @@ _This webpage let's a user input a number and returns a range of numbers from 1 
 | ------------- |:-------------:| -----:|
 | Generate a range of numbers from 1 to inputted number and put it into an array  | 5 | [1, 2, 3, 4, 5] |
 | Change multiples of 3 to 'ping' within an array  | [1, 2, 3, 4, 5] | [1, 2, 'ping', 4, 5] |
-| Change multiples of 5 to 'pong' within an array | [1, 2, 3, 4, 5] | [1, 2, 3, 4, 'pong'] |
-| Change multiples of 15 to 'pingpong' within an array |[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15] | [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 'pingpong'] |
+| Change multiples of 5 to 'pong' within an array | [1, 2, 3, 4, 5] | [1, 2, 'ping', 4, 'pong'] |
+| Change multiples of 15 to 'pingpong' within an array |[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15] | [1, 2, 'ping', 4, 'pong', 'ping', 7, 8, 'ping', 'pong', 11, 'ping', 13, 14, 'pingpong'] |
 | Output separate elements from an array in a separate li tag | [1, 2, 3, 4, 5] |  1 <br> 2 <br> 3 <br> 4 <br> 5 <br>|
 | If a new number is submitted existing li values are replaced with new li values  | input = 5<br> 1 <br> 2 <br> 3 <br> 4 <br> 5 <br> | input = 4<br> 1 <br> 2 <br> 3 <br> 4 <br> |
 
